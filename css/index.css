@@ -1483,3 +1483,6 @@ form.padded10 {
 form.padded10 {
   padding-bottom: 50vh;
 }
+body {
+  background: white url("../img/bg.png") no-repeat 100% 75px !important;
+}
