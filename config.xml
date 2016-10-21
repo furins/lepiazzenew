@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="it.indalo.lepiazze" version="1.0.1">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="it.indalo.lepiazze" version="1.0.2">
 
     <name>Le Piazze</name>
 
@@ -92,10 +92,10 @@
         <icon src="res/icon/android/icon-144-xxhdpi.png" qualifier="xxhdpi" density="xxhdpi"/>
         <icon src="res/icon/android/icon-192-xxxhdpi.png" qualifier="xxxhdpi" density="xxxhdpi"/>
 
-        <splash src="res/screen/android/screen-ldpi-portrait.png" qualifier="port-ldpi"/>
-        <splash src="res/screen/android/screen-mdpi-portrait.png" qualifier="port-mdpi"/>
-        <splash src="res/screen/android/screen-hdpi-portrait.png" qualifier="port-hdpi"/>
-        <splash src="res/screen/android/screen-xhdpi-portrait.png" qualifier="port-xhdpi"/>
+        <splash src="res/splashscreens/splash-320x200.png" qualifier="port-ldpi"/>
+        <splash src="res/splashscreens/splash-320x480.png" qualifier="port-mdpi"/>
+        <splash src="res/splashscreens/splash-480x800.png" qualifier="port-hdpi"/>
+        <splash src="res/splashscreens/splash-720px1280.png" qualifier="port-xhdpi"/>
 
         <preference name="fullscreen" value="false" />
     </platform>
@@ -118,19 +118,28 @@
         <icon src="res/icon/ios/icon-small-2x.png" width="58" height="58"/>
         <icon src="res/icon/ios/icon-small.png" width="29" height="29"/>
 
-        <splash src="res/screen/ios/screen-iphone-portrait.png" width="320" height="480"/>
-        <splash src="res/screen/ios/screen-iphone-portrait-2x.png" width="640" height="960"/>
-        <splash src="res/screen/ios/screen-iphone-portrait-568h-2x.png" width="640" height="1136"/>
-        <splash src="res/screen/ios/screen-iphone-portrait-667h.png" width="750" height="1334"/>
-        <splash src="res/screen/ios/screen-iphone-portrait-736h.png" width="1242" height="2208"/>
-        <splash src="res/screen/ios/screen-ipad-portrait.png" width="768" height="1024"/>
-        <splash src="res/screen/ios/screen-ipad-portrait-2x.png" width="1536" height="2048"/>
-        <splash src="res/screen/ios/screen-ipad-landscape.png" platform="ios" width="1024" height="768"/>
+        <!-- LEGACY -->
+        <splash src="res/splashscreens/splash-320x480.png" width="320" height="480"/>
+        <splash src="res/splashscreens/splash-640x960.png" width="640" height="960"/>
+        <splash src="res/splashscreens/splash-640x1136.png" width="640" height="1136"/>
+        <splash src="res/splashscreens/splash-750x1334.png" width="750" height="1334"/>
+        <splash src="res/splashscreens/splash-1242x2208.png" width="1242" height="2208"/>
+        <splash src="res/splashscreens/splash-768x1024.png" width="768" height="1024"/>
+        <splash src="res/splashscreens/splash-1536x2048.png" width="1536" height="2048"/>
+        <splash src="res/splashscreens/splash-1024x768.png" width="1024" height="768"/>
+        <splash src="res/splashscreens/splash-2048x1536.png" width="2048" height="1536"/>
+        <!--Storyboard-->
+        <splash src="res/splashscreens/Default@2x~universal~anyany.png" />
+        <splash src="res/splashscreens/Default@2x~universal~comany.png" />
+        <splash src="res/splashscreens/Default@2x~universal~comcom.png" />
+        <splash src="res/splashscreens/Default@3x~universal~anyany.png" />
+        <splash src="res/splashscreens/Default@3x~universal~anycom.png" />
+        <splash src="res/splashscreens/Default@3x~universal~comany.png" />
 
         <preference name="SplashScreenDelay" value="6000" />
     </platform>
 
-    <platform name="winphone">
+    <platform name="windows">
         <icon src="res/icon/windows-phone/icon-48.png" width="48" height="48"/>
         <icon src="res/icon/windows-phone/icon-70.png" width="70" height="70"/>
         <icon src="res/icon/windows-phone/icon-173.png" role="background"/>
@@ -144,8 +153,8 @@
         <icon src="res/icon/windows-phone/Square71x71Logo.scale-240.png" width="170" height="170"/>
         <icon src="res/icon/windows-phone/Wide310x150Logo.scale-100.png" width="310" height="150"/>
         <icon src="res/icon/windows-phone/Wide310x150Logo.scale-240.png" width="744" height="360"/>
-        <splash src="res/screen/wp8/SplashScreenImage.jpg"/>
-        <splash width="1152" height="1920" src="res/screen/windows-phone/SplashScreenPhone.scale-240.png"/>
+        <splash src="res/splashscreens/splash-620x300.png"  width="620" height="300"/>
+        <splash src="res/splashscreens/splash-1152x1920.png" width="1152" height="1920" />
     </platform>
     <!-- Define app splash screen for each platform. -->
 
@@ -166,7 +175,7 @@
     </gap:config-file>
 
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
-        <string>101</string>
+        <string>102</string>
     </gap:config-file>
 
     <feature name="StatusBar">
